@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>COMPLEX FORM</h2>
+    <form action="">
+
+        <fieldset>
+            <legend>Persanol Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" name="User Name" id="name">
+            <label for="mail">Email:</label>
+            <input type="email" name="User email" id="mail">
+            <label for="phon">Phone:</label>
+            <input type="tel" name="Phon no" id="phon">
+            <label for="date">DOB:</label>
+            <input type="date" name="Phon no" id="date">
+            Gender:
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female">
+            <label for="country">Country:</label>
+            <select name="Country" id="country">
+                <option value="">INDIA</option>
+                <option value="">USA</option>
+                <option value="">JAPAN</option>
+                <option value="">RUSSIA</option>
+                <option value="">Other</option>
+            </select>
+        </fieldset>
+        <br>
+        <br><br><br>
+        <fieldset>
+            <legend>
+                <label for="add">Address Street</label>
+                <input type="text" name="" id="add">
+                <label for="city">City</label>
+                <input type="text" name="" id="city">
+                <label for="state">City</label>
+                <input type="text" name="" id="state">
+                <label for="zip">ZIP Code</label>
+                <input type="number" name="" id="zip" required>
+
+            </legend>
+        </fieldset>
+        <br><br><br><br>
+        <fieldset>
+            <legend>Other Information</legend>
+            <label for="comm">Comment:</label>
+            <br>
+            <textarea name="" id="comm" cols="40" rows="3"></textarea>
+            <label for="terms"> I Agree the Term of Services.</label>
+            <input type="checkbox" name="" id="terms">
+
+        </fieldset>
+        <button>Submit</button>
+    </form>
+
+    <br><br>
+    <label for="res">Resume</label>
+    <input type="file"  id="res">
+    <br><br>
+    <label for="fu">Now,</label>
+    <input type="file" id="fu" onchange="FileSelected()" style="width: 0;">
+</body>
+
+</html>
